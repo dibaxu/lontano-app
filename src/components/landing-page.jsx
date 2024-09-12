@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Navigate from "@/components/navigate";
 
 export function LandingPage() {
@@ -33,7 +31,7 @@ export function LandingPage() {
         }}
         transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
       />
-      <div className='container z-10'>
+      <div className='container z-10 grid justify-center'>
         <h1 className='text-6xl font-bold mb-8 text-center'>
           <svg
             id='lontano_logo'
