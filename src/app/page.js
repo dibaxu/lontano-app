@@ -5,7 +5,7 @@ import MotionBackground from "@/components/motion";
 export default function Home() {
   return (
     <>
-      {/* <MotionBackground /> */}
+      <MotionBackground />
       <main className='z-10'>
         <LandingPage />
         <Navigate />
