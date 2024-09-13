@@ -8,7 +8,7 @@ export default function page() {
       <MotionBackground />
       <main className='container mx-auto'>
         <h1 className='text-4xl font-bold mb-8 text-center'>Contacto</h1>
-        <div className='flex flex-col items-center space-y-2 text-center p-2'>
+        <div className='flex flex-col items-center text-center  max-w-3xl mx-auto space-y-2 p-2'>
           <p className='text-lg'>
             ¡Estamos en contacto! ¿Tienes un proyecto en mente? ¿Quieres saber
             más sobre nosotros? Escríbenos a{" "}

@@ -7,7 +7,7 @@ export default function page() {
       <MotionBackground />
       <main className=' container mx-auto'>
         <h1 className='text-4xl font-bold mb-8 text-center'>Nosotros</h1>
-        <div className='flex flex-col items-center text-center p-2'>
+        <div className='flex flex-col items-center text-center max-w-3xl mx-auto space-y-2 p-2'>
           <p className='text-lg'>
             Somos una organización sin fines de lucro que promueve la cultura y
             el arte en todas sus formas. Nuestro objetivo es acercar la cultura
