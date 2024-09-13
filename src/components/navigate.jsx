@@ -18,49 +18,48 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 export default function Navigate() {
   const pathname = usePathname();
   const isNotHomePage = pathname !== "/";
+
   return (
-    <nav>
-      <NavigationMenu>
-        <NavigationMenuList>
+    <NavigationMenu>
+      <NavigationMenuList>
+        {isNotHomePage && (
           <NavigationMenuItem>
-            <Link href='/nosotros' legacyBehavior passHref>
+            <Link href='/' legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                nosotros
+                inicio
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-
-      <ul className='flex justify-center py-4 space-x-6 text-lg'>
-        {isNotHomePage && (
-          <li>
-            <Button asChild variant='outline'>
-              <Link href='/'>inicio</Link>
-            </Button>
-          </li>
         )}
-        <li>
-          <Button asChild variant='outline'>
-            <Link href='/actividades'>actividades</Link>
-          </Button>
-        </li>
-        <li>
-          <Button asChild variant='outline'>
-            <Link href='/agenda'>agenda</Link>
-          </Button>
-        </li>
-        <li>
-          <Button asChild variant='outline'>
-            <Link href='/contacto'>contacto</Link>
-          </Button>
-        </li>
-        <li>
-          <Button asChild variant='outline'>
-            <Link href='/nosotros'>nosotros</Link>
-          </Button>
-        </li>
-      </ul>
-    </nav>
+        <NavigationMenuItem>
+          <Link href='/actividades' legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              actividades
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href='/agenda' legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              agenda
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href='/nosotros' legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              nosotros
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href='/contacto' legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              contacto
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 }
